@@ -1,0 +1,41 @@
+<!-- Header de la page -->
+
+<div class="banniere-formulaire">
+    <img id="img-banniere" src="/s/imgs/pages/trophees-dor/2023/bannieres/desktop-banniere-inscription-v2.jpg">
+</div>
+
+<style>
+    .banniere-formulaire {
+        margin: -110px -60px;
+        position: relative;
+        max-height: 30em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #img-banniere {
+        background-color: #E84F13;
+        visibility: visible;
+        max-width: 100%;
+        margin-top: 3rem;
+    }
+
+    @media screen and (max-width: 650px) {
+        .banniere-formulaire {
+            margin: -100px -60px;
+        }
+
+
+    }
+</style>
+
+<script>
+    window.addEventListener('resize', function (event) {
+        if (window.innerWidth > 650) {
+            document.getElementById("img-banniere").src = "/s/imgs/pages/trophees-dor/2023/bannieres/desktop-banniere-inscription-v2.jpg";
+        } else {
+            document.getElementById("img-banniere").src = "/s/imgs/pages/trophees-dor/2023/bannieres/mobile-banniere-inscription-v2.jpg";
+        }
+    }, true);
+</script>
